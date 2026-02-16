@@ -5,269 +5,383 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shuvam Sarkar — Technical Writer | Knowledge Base Specialist</title>
   <meta name="description" content="Technical Writer with 4+ years of experience in enterprise documentation, knowledge base management, and supporting global product teams at Cognizant.">
+  <meta name="theme-color" content="#0f172a">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav" aria-label="Main navigation">
-      <a href="#top" class="nav-logo">Shuvam Sarkar</a>
-      <ul class="nav-links">
-        <li><a href="#summary">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#learning">Learning</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#languages">Languages</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span class="nav-toggle-middle" aria-hidden="true"></span></button>
-    </nav>
+  <!-- Mobile Header -->
+  <header class="mobile-header" role="banner">
+    <a href="#top" class="mobile-logo">Shuvam Sarkar</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="nav-toggle-bar" aria-hidden="true"></span>
+    </button>
   </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="hero-inner">
-        <div class="hero-photo-wrap">
-          <img src="profile.jpg" alt="Shuvam Sarkar" class="hero-photo" width="240" height="240">
+  <!-- Mobile Nav Overlay -->
+  <nav class="mobile-nav" aria-label="Mobile navigation" hidden>
+    <ul class="mobile-nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#learning">Learning</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="resume.html" target="_blank" rel="noopener noreferrer" class="mobile-resume-link">Resume</a></li>
+    </ul>
+  </nav>
+
+  <div class="layout" id="top">
+    <!-- Left Column: Sticky Sidebar -->
+    <aside class="sidebar" role="complementary">
+      <div class="sidebar-inner">
+        <div class="sidebar-top">
+          <div class="sidebar-photo-wrap">
+            <img src="profile.jpg" alt="Shuvam Sarkar" class="sidebar-photo" width="120" height="120">
+          </div>
+          <h1 class="sidebar-name">Shuvam Sarkar</h1>
+          <p class="sidebar-role">Technical Writer</p>
+          <p class="sidebar-tagline">I craft clear, accurate enterprise documentation and manage knowledge bases that serve global product teams.</p>
         </div>
-        <div class="hero-text">
-          <h1 class="hero-title">Shuvam Sarkar</h1>
-          <p class="hero-subtitle">Technical Writer · Knowledge Base Specialist · Enterprise Documentation</p>
-          <p class="hero-location">📍 Kolkata, India / Manila, Philippines</p>
-          <div class="hero-links">
-            <a href="resume.html" class="btn btn-primary" target="_blank" rel="noopener noreferrer">📄 Download Resume (Save as PDF)</a>
-            <a href="https://wa.me/919051879329" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" title="WhatsApp text only when abroad">📱 +91-9051879329</a>
-            <a href="tel:+639456017496" class="btn btn-secondary">📞 +63 945 601 7496</a>
-            <a href="mailto:shuvamsarkar2000@gmail.com" class="btn btn-secondary">✉ Email</a>
-            <a href="https://www.linkedin.com/in/shuvam-sarkar-49b6a21b8" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="linkedin-link">LinkedIn</a>
-            <a href="#" class="btn btn-outline" id="portfolio-link">Portfolio</a>
+
+        <nav class="sidebar-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="#about" class="nav-link active"><span class="nav-indicator" aria-hidden="true"></span><span class="nav-text">About</span></a></li>
+            <li><a href="#skills" class="nav-link"><span class="nav-indicator" aria-hidden="true"></span><span class="nav-text">Skills</span></a></li>
+            <li><a href="#experience" class="nav-link"><span class="nav-indicator" aria-hidden="true"></span><span class="nav-text">Experience</span></a></li>
+            <li><a href="#projects" class="nav-link"><span class="nav-indicator" aria-hidden="true"></span><span class="nav-text">Projects</span></a></li>
+            <li><a href="#learning" class="nav-link"><span class="nav-indicator" aria-hidden="true"></span><span class="nav-text">Learning</span></a></li>
+            <li><a href="#education" class="nav-link"><span class="nav-indicator" aria-hidden="true"></span><span class="nav-text">Education</span></a></li>
+            <li><a href="#certifications" class="nav-link"><span class="nav-indicator" aria-hidden="true"></span><span class="nav-text">Certifications</span></a></li>
+            <li><a href="#contact" class="nav-link"><span class="nav-indicator" aria-hidden="true"></span><span class="nav-text">Contact</span></a></li>
+          </ul>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <a href="resume.html" class="sidebar-resume-btn" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+            Download Resume
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+          </a>
+          <div class="sidebar-social">
+            <a href="https://www.linkedin.com/in/shuvam-sarkar-49b6a21b8" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="mailto:shuvamsarkar2000@gmail.com" class="social-link" aria-label="Email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </a>
+            <a href="https://wa.me/919051879329" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </a>
           </div>
         </div>
       </div>
-    </section>
+    </aside>
 
-    <section id="summary" class="section summary">
-      <h2 class="section-title">Professional Summary</h2>
-      <div class="summary-content">
-        <p>Technical Writer with <strong>4+ years</strong> of experience creating enterprise documentation, managing large-scale knowledge bases, and supporting global product teams at <strong>Cognizant Technology Solutions</strong>.</p>
-        <p>Currently working onsite in Manila (since Aug 2024) on a project for a major U.S.-based social media and online video-sharing platform, maintaining a multi-vertical knowledge database, authoring content for product teams, and supporting product feature launches.</p>
-        <p>Specialized in knowledge-base administration, content audits, enterprise documentation, HTML/Markdown authoring, and Gen-AI–assisted workflows. Known for delivering clear, accurate documentation under strict client timelines.</p>
-      </div>
-    </section>
-
-    <section id="skills" class="section skills">
-      <h2 class="section-title">Core Skills</h2>
-      <div class="skills-grid">
-        <article class="skill-card">
-          <h3>Documentation</h3>
-          <ul>
-            <li>Knowledge Base Articles</li>
-            <li>User Guides</li>
-            <li>Online Help</li>
-            <li>Release Notes</li>
-            <li>FAQs</li>
-            <li>Job Aids</li>
-            <li>Training Materials</li>
-            <li>Process Docs</li>
-            <li>API Documentation Basics</li>
-          </ul>
-        </article>
-        <article class="skill-card">
-          <h3>Knowledge Management</h3>
-          <ul>
-            <li>Zoomin Administration</li>
-            <li>Taxonomy & Tagging</li>
-            <li>Content Audits</li>
-            <li>Translation Requests</li>
-            <li>Content Migration</li>
-            <li>Analytics-Driven Improvements</li>
-          </ul>
-        </article>
-        <article class="skill-card">
-          <h3>Tools & Technologies</h3>
-          <ul>
-            <li>Adobe RoboHelp · Captivate · Articulate Storyline</li>
-            <li>SnagIT · MS Office</li>
-            <li>HTML · CSS · Markdown</li>
-            <li>Docs-as-Code · SharePoint</li>
-          </ul>
-        </article>
-        <article class="skill-card">
-          <h3>Platforms</h3>
-          <ul>
-            <li>Zoomin</li>
-            <li>WalkMe</li>
-            <li>Whatfix</li>
-            <li>Internal CMS tools</li>
-          </ul>
-        </article>
-        <article class="skill-card skill-card--accent">
-          <h3>Emerging Skills</h3>
-          <ul>
-            <li>Generative AI Tools</li>
-            <li>Prompt Engineering</li>
-            <li>Content Review Automation</li>
-            <li>Full-Stack Basics</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section id="experience" class="section experience">
-      <h2 class="section-title">Professional Experience</h2>
-      <article class="experience-card experience-card--primary">
-        <div class="experience-header">
-          <h3>Technical Content Writer</h3>
-          <p class="experience-company">Cognizant Technology Solutions</p>
-          <p class="experience-date">Aug 2021 – Present</p>
+    <!-- Right Column: Scrollable Content -->
+    <main class="content">
+      <section id="about" class="content-section">
+        <h2 class="section-label">About</h2>
+        <div class="about-text">
+          <p>I'm a Technical Writer with <strong>4+ years</strong> of experience creating enterprise documentation, managing large-scale knowledge bases, and supporting global product teams at <strong>Cognizant Technology Solutions</strong>.</p>
+          <p>Currently working onsite in <strong>Manila</strong> (since Aug 2024) on a project for a major U.S.-based social media and online video-sharing platform, maintaining a multi-vertical knowledge database, authoring content for product teams, and supporting product feature launches.</p>
+          <p>Specialized in knowledge-base administration, content audits, enterprise documentation, HTML/Markdown authoring, and Gen-AI-assisted workflows. Known for delivering clear, accurate documentation under strict client timelines.</p>
+          <p class="about-location">Kolkata, India / Manila, Philippines</p>
         </div>
-        <p class="experience-location">Onsite Assignment – Manila, Philippines (since Aug 2024)</p>
-        <p class="experience-context">Current project: Major U.S.-based social media & online video-sharing platform</p>
-        <ul class="experience-list">
-          <li>Create and maintain a central knowledge database supporting multiple operational verticals.</li>
-          <li>Author and update KB articles on feature launches, bug fixes, workflow updates, and known issues.</li>
-          <li>Manage content organization, translation requests, and large-scale KB restructuring projects.</li>
-          <li>Perform peer reviews across verticals to improve clarity, accuracy, and consistency.</li>
-          <li>Conduct audits to ensure documentation stays aligned with product releases.</li>
-          <li>Use internal CMS and issue-tracking tools for documentation lifecycle management.</li>
-          <li>Format articles using HTML to improve usability and accessibility.</li>
-          <li>Use Markdown for team communication in issue-tracking workflows.</li>
-          <li>Write internal process documentation and training materials.</li>
-          <li>Create weekly and urgent announcements for clients and partner teams.</li>
-          <li>Respond to stakeholder feedback and triage bug queues to update documentation impact areas.</li>
-        </ul>
-      </article>
-    </section>
+      </section>
 
-    <section id="projects" class="section projects">
-      <h2 class="section-title">Enterprise Documentation & Knowledge Portal Projects</h2>
-      <p class="projects-intro">All projects below were delivered at Cognizant between 2021 and 2024.</p>
-      <div class="projects-grid">
-        <article class="project-card">
-          <h3>Zoomin Knowledge Portal Administration</h3>
-          <p class="project-client">Customer: US-based Property & Business Intelligence Corporation</p>
-          <p class="project-desc">Zoomin is an enterprise documentation delivery platform that aggregates content from multiple authoring tools into searchable help portals.</p>
-          <ul>
-            <li>Managed taxonomy, tagging, and content organization to improve findability.</li>
-            <li>Prepared SharePoint content for migration into Zoomin portal.</li>
-            <li>Helped developers use Zoomin as repository for API documentation.</li>
-            <li>Monitored analytics to identify documentation gaps.</li>
-            <li>Collaborated with business units to restructure knowledge content.</li>
-            <li>Supported UAT and created test scripts.</li>
-          </ul>
-        </article>
-        <article class="project-card">
-          <h3>Training Materials – Enterprise IT Platform (100k+ Users)</h3>
-          <ul>
-            <li>Created QRGs, FAQs, job aids, release notes, and training plans.</li>
-            <li>Collaborated with developers and module leads to gather requirements.</li>
-            <li>Updated impacted documentation after product enhancements.</li>
-            <li>Ensured templates met brand standards and resolved SME review comments.</li>
-          </ul>
-        </article>
-        <article class="project-card">
-          <h3>Digital Adoption Documentation (WalkMe / Whatfix)</h3>
-          <p class="project-client">Customer: Global Pharmaceutical Company</p>
-          <ul>
-            <li>Built workflow storyboards and application simulations.</li>
-            <li>Customized content based on client requirements.</li>
-            <li>Resolved WalkMe support tickets and supported AMS processes.</li>
-            <li>Conducted KT sessions and user walkthroughs.</li>
-          </ul>
-          <p class="project-note">(Experience retained but secondary to documentation focus.)</p>
-        </article>
-      </div>
-    </section>
+      <section id="skills" class="content-section">
+        <h2 class="section-label">Skills</h2>
+        <div class="skills-container">
+          <div class="skill-group">
+            <h3 class="skill-group-title">Documentation</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Knowledge Base Articles</span>
+              <span class="skill-tag">User Guides</span>
+              <span class="skill-tag">Online Help</span>
+              <span class="skill-tag">Release Notes</span>
+              <span class="skill-tag">FAQs</span>
+              <span class="skill-tag">Job Aids</span>
+              <span class="skill-tag">Training Materials</span>
+              <span class="skill-tag">Process Docs</span>
+              <span class="skill-tag">API Documentation</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title">Knowledge Management</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Zoomin Administration</span>
+              <span class="skill-tag">Taxonomy & Tagging</span>
+              <span class="skill-tag">Content Audits</span>
+              <span class="skill-tag">Translation Requests</span>
+              <span class="skill-tag">Content Migration</span>
+              <span class="skill-tag">Analytics-Driven Improvements</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title">Tools & Technologies</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Adobe RoboHelp</span>
+              <span class="skill-tag">Captivate</span>
+              <span class="skill-tag">Articulate Storyline</span>
+              <span class="skill-tag">SnagIT</span>
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">Markdown</span>
+              <span class="skill-tag">Docs-as-Code</span>
+              <span class="skill-tag">SharePoint</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title">Platforms</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Zoomin</span>
+              <span class="skill-tag">WalkMe</span>
+              <span class="skill-tag">Whatfix</span>
+              <span class="skill-tag">Internal CMS</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title">Emerging Skills</h3>
+            <div class="skill-tags">
+              <span class="skill-tag skill-tag--accent">Generative AI Tools</span>
+              <span class="skill-tag skill-tag--accent">Prompt Engineering</span>
+              <span class="skill-tag skill-tag--accent">Content Review Automation</span>
+              <span class="skill-tag skill-tag--accent">Full-Stack Basics</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section id="learning" class="section learning">
-      <h2 class="section-title">Exploration & Continuous Learning</h2>
-      <div class="learning-content">
-        <ul>
-          <li>Completed <strong>Full-Stack Web Development Certification</strong> to better understand developer workflows and improve API and technical documentation.</li>
-          <li>Actively exploring <strong>Docs-as-Code</strong> practices, Git-based documentation workflows, and Markdown-driven publishing.</li>
-          <li>Skilled in using <strong>Generative AI tools</strong> for content drafting, review automation, and documentation improvement.</li>
-          <li>Practice “vibe coding”—experimenting with small web apps and scripts to understand user workflows and improve technical writing accuracy.</li>
-          <li>Continuously learning modern tools and workflows to stay aligned with evolving documentation practices.</li>
-        </ul>
-      </div>
-    </section>
+      <section id="experience" class="content-section">
+        <h2 class="section-label">Experience</h2>
+        <div class="experience-list">
+          <article class="experience-item">
+            <div class="experience-time">Aug 2021 - Present</div>
+            <div class="experience-body">
+              <h3 class="experience-title">
+                Technical Content Writer
+                <span class="experience-company">Cognizant Technology Solutions</span>
+              </h3>
+              <p class="experience-meta">Onsite Assignment - Manila, Philippines (since Aug 2024)</p>
+              <p class="experience-context">Current project: Major U.S.-based social media & online video-sharing platform</p>
+              <ul class="experience-details">
+                <li>Create and maintain a central knowledge database supporting multiple operational verticals.</li>
+                <li>Author and update KB articles on feature launches, bug fixes, workflow updates, and known issues.</li>
+                <li>Manage content organization, translation requests, and large-scale KB restructuring projects.</li>
+                <li>Perform peer reviews across verticals to improve clarity, accuracy, and consistency.</li>
+                <li>Conduct audits to ensure documentation stays aligned with product releases.</li>
+                <li>Use internal CMS and issue-tracking tools for documentation lifecycle management.</li>
+                <li>Format articles using HTML to improve usability and accessibility.</li>
+                <li>Write internal process documentation and training materials.</li>
+                <li>Create weekly and urgent announcements for clients and partner teams.</li>
+                <li>Respond to stakeholder feedback and triage bug queues to update documentation impact areas.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
 
-    <section id="education" class="section education">
-      <h2 class="section-title">Education</h2>
-      <div class="education-list">
-        <article class="education-item">
-          <h3>M.A. History</h3>
-          <p class="education-school">Indira Gandhi National Open University — 2023</p>
-          <p class="education-note">Qualified UGC NET (2021–22 cycle)</p>
-        </article>
-        <article class="education-item">
-          <h3>B.A. (Hons) History</h3>
-          <p class="education-school">Presidency University — 2021</p>
-        </article>
-        <article class="education-item education-item--publication">
-          <h3>Publication</h3>
-          <p class="education-publication">“B'nei Menashe: Claim and Consequences; A Case Study.” <cite>International CEO Social Sciences Congress Proceedings</cite> (2022)</p>
-        </article>
-      </div>
-    </section>
+      <section id="projects" class="content-section">
+        <h2 class="section-label">Projects</h2>
+        <p class="section-intro">All projects delivered at Cognizant between 2021 and 2024.</p>
+        <div class="projects-list">
+          <article class="project-item">
+            <div class="project-body">
+              <h3 class="project-title">Zoomin Knowledge Portal Administration</h3>
+              <p class="project-client">US-based Property & Business Intelligence Corporation</p>
+              <p class="project-desc">Zoomin is an enterprise documentation delivery platform that aggregates content from multiple authoring tools into searchable help portals.</p>
+              <ul class="project-details">
+                <li>Managed taxonomy, tagging, and content organization to improve findability.</li>
+                <li>Prepared SharePoint content for migration into Zoomin portal.</li>
+                <li>Helped developers use Zoomin as repository for API documentation.</li>
+                <li>Monitored analytics to identify documentation gaps.</li>
+                <li>Collaborated with business units to restructure knowledge content.</li>
+                <li>Supported UAT and created test scripts.</li>
+              </ul>
+              <div class="project-tags">
+                <span class="skill-tag">Zoomin</span>
+                <span class="skill-tag">Taxonomy</span>
+                <span class="skill-tag">SharePoint</span>
+                <span class="skill-tag">Analytics</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-item">
+            <div class="project-body">
+              <h3 class="project-title">Training Materials - Enterprise IT Platform (100k+ Users)</h3>
+              <ul class="project-details">
+                <li>Created QRGs, FAQs, job aids, release notes, and training plans.</li>
+                <li>Collaborated with developers and module leads to gather requirements.</li>
+                <li>Updated impacted documentation after product enhancements.</li>
+                <li>Ensured templates met brand standards and resolved SME review comments.</li>
+              </ul>
+              <div class="project-tags">
+                <span class="skill-tag">Training</span>
+                <span class="skill-tag">QRGs</span>
+                <span class="skill-tag">Release Notes</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-item">
+            <div class="project-body">
+              <h3 class="project-title">Digital Adoption Documentation (WalkMe / Whatfix)</h3>
+              <p class="project-client">Global Pharmaceutical Company</p>
+              <ul class="project-details">
+                <li>Built workflow storyboards and application simulations.</li>
+                <li>Customized content based on client requirements.</li>
+                <li>Resolved WalkMe support tickets and supported AMS processes.</li>
+                <li>Conducted KT sessions and user walkthroughs.</li>
+              </ul>
+              <div class="project-tags">
+                <span class="skill-tag">WalkMe</span>
+                <span class="skill-tag">Whatfix</span>
+                <span class="skill-tag">Storyboards</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
 
-    <section id="certifications" class="section certifications">
-      <h2 class="section-title">Certifications</h2>
-      <a href="https://www.linkedin.com/in/shuvam-sarkar-49b6a21b8/details/certifications/" target="_blank" rel="noopener noreferrer" class="cert-linkedin-link">View all credentials on LinkedIn →</a>
-      <ul class="cert-list">
-        <li>Business Writing & Technical Writing Immersion — Udemy — 2025</li>
-        <li>The New Trainer's Guide to Creating End User Documentation — Udemy — 2025</li>
-        <li>Learn API Technical Writing 2: REST for Writers — Udemy — 2025</li>
-        <li>Technical Writing: How to Write Software Documentation — Udemy — 2025</li>
-        <li>Prompt Engineering: ChatGPT & AI Prompts For Work Success! — Udemy — 2025</li>
-        <li>Learn Swagger and the OpenAPI Specification — Udemy — 2025</li>
-        <li>Technical Writing: How to Write API Software Documentation — Udemy — 2025</li>
-        <li>Git and GitHub for Writers — Udemy — 2025</li>
-        <li>Microsoft 365 Copilot: The Art of Prompt Writing — Birdify LMSAFP — 2024</li>
-        <li>Better Business Writing Skills — Udemy — 2024</li>
-        <li>Cloud Digital Leader Certification — Google — 2024</li>
-        <li>Markdown Mastery: Simple yet Powerful Writing Format — Udemy — 2024</li>
-        <li>Best Practices in Document Management — Udemy — 2023</li>
-        <li>Zoomin Documentation Portal Admin Certification — Zoomin — 2023</li>
-        <li>Full Stack Web Development — Vidyastu Education — 2023</li>
-        <li>ChatGPT Complete Course: Learn ChatGPT & Prompt Engineering — Udemy — 2023</li>
-        <li>ChatGPT Complete Guide: Learn Midjourney, ChatGPT 4 & More — Udemy — 2023</li>
-        <li>Whatfix Certified Digital Adoption Associate — Whatfix — 2023</li>
-        <li>Learn API Technical Writing: JSON and XML for Writers — Udemy — 2022</li>
-        <li>Effective Business English for Service Staff — Udemy — 2021</li>
-        <li>Email Etiquette: Write More Effective Emails At Work — Udemy — 2021</li>
-        <li>Digital Adoption Technical Training (Self Study) — WalkMe — 2021</li>
-        <li>Digital Adoption Project Management (Self Study) — WalkMe — 2021</li>
-      </ul>
-    </section>
+      <section id="learning" class="content-section">
+        <h2 class="section-label">Exploration & Learning</h2>
+        <div class="learning-list">
+          <div class="learning-item">
+            <p>Completed <strong>Full-Stack Web Development Certification</strong> to better understand developer workflows and improve API and technical documentation.</p>
+          </div>
+          <div class="learning-item">
+            <p>Actively exploring <strong>Docs-as-Code</strong> practices, Git-based documentation workflows, and Markdown-driven publishing.</p>
+          </div>
+          <div class="learning-item">
+            <p>Skilled in using <strong>Generative AI tools</strong> for content drafting, review automation, and documentation improvement.</p>
+          </div>
+          <div class="learning-item">
+            <p>Practice "vibe coding" - experimenting with small web apps and scripts to understand user workflows and improve technical writing accuracy.</p>
+          </div>
+          <div class="learning-item">
+            <p>Continuously learning modern tools and workflows to stay aligned with evolving documentation practices.</p>
+          </div>
+        </div>
+      </section>
 
-    <section id="languages" class="section languages">
-      <h2 class="section-title">Languages</h2>
-      <p class="languages-text">Bengali (Native) · English (Fluent) · Hindi (Advanced)</p>
-    </section>
+      <section id="education" class="content-section">
+        <h2 class="section-label">Education</h2>
+        <div class="education-list">
+          <article class="education-item">
+            <div class="education-year">2023</div>
+            <div class="education-body">
+              <h3 class="education-degree">M.A. History</h3>
+              <p class="education-school">Indira Gandhi National Open University</p>
+              <p class="education-note">Qualified UGC NET (2021-22 cycle)</p>
+            </div>
+          </article>
+          <article class="education-item">
+            <div class="education-year">2021</div>
+            <div class="education-body">
+              <h3 class="education-degree">B.A. (Hons) History</h3>
+              <p class="education-school">Presidency University</p>
+            </div>
+          </article>
+          <article class="education-item">
+            <div class="education-year">2022</div>
+            <div class="education-body">
+              <h3 class="education-degree">Publication</h3>
+              <p class="education-publication">"B'nei Menashe: Claim and Consequences; A Case Study." <cite>International CEO Social Sciences Congress Proceedings</cite></p>
+            </div>
+          </article>
+        </div>
+        <div class="languages-bar">
+          <span class="languages-label">Languages</span>
+          <span class="languages-list">Bengali (Native) &middot; English (Fluent) &middot; Hindi (Advanced)</span>
+        </div>
+      </section>
 
-    <section id="contact" class="section contact">
-      <h2 class="section-title">Get in Touch</h2>
-      <p class="contact-text">Open to documentation, knowledge base, and technical writing opportunities.</p>
-      <p class="contact-note">+91-9051879329 (primary; WhatsApp text only when abroad) · +63 945 601 7496 (Philippines)</p>
-      <div class="contact-links">
-        <a href="resume.html" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Download Resume (Save as PDF)</a>
-        <a href="mailto:shuvamsarkar2000@gmail.com" class="btn btn-secondary">Email Me</a>
-        <a href="https://wa.me/919051879329" class="btn btn-outline" target="_blank" rel="noopener noreferrer" title="WhatsApp text only when abroad">+91-9051879329</a>
-        <a href="tel:+639456017496" class="btn btn-outline">+63 945 601 7496</a>
-        <a href="https://www.linkedin.com/in/shuvam-sarkar-49b6a21b8" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="linkedin-link-footer">LinkedIn</a>
-      </div>
-    </section>
-  </main>
+      <section id="certifications" class="content-section">
+        <h2 class="section-label">Certifications</h2>
+        <a href="https://www.linkedin.com/in/shuvam-sarkar-49b6a21b8/details/certifications/" target="_blank" rel="noopener noreferrer" class="cert-linkedin-link">
+          View all credentials on LinkedIn
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+        </a>
+        <div class="cert-grid">
+          <div class="cert-year-group">
+            <h3 class="cert-year">2025</h3>
+            <ul class="cert-items">
+              <li>Business Writing & Technical Writing Immersion</li>
+              <li>The New Trainer's Guide to Creating End User Documentation</li>
+              <li>Learn API Technical Writing 2: REST for Writers</li>
+              <li>Technical Writing: How to Write Software Documentation</li>
+              <li>Prompt Engineering: ChatGPT & AI Prompts</li>
+              <li>Learn Swagger and the OpenAPI Specification</li>
+              <li>Technical Writing: How to Write API Documentation</li>
+              <li>Git and GitHub for Writers</li>
+            </ul>
+          </div>
+          <div class="cert-year-group">
+            <h3 class="cert-year">2024</h3>
+            <ul class="cert-items">
+              <li>Microsoft 365 Copilot: The Art of Prompt Writing</li>
+              <li>Better Business Writing Skills</li>
+              <li>Cloud Digital Leader Certification - Google</li>
+              <li>Markdown Mastery: Simple yet Powerful Writing Format</li>
+            </ul>
+          </div>
+          <div class="cert-year-group">
+            <h3 class="cert-year">2023</h3>
+            <ul class="cert-items">
+              <li>Best Practices in Document Management</li>
+              <li>Zoomin Documentation Portal Admin Certification</li>
+              <li>Full Stack Web Development</li>
+              <li>ChatGPT Complete Course & Guide</li>
+              <li>Whatfix Certified Digital Adoption Associate</li>
+            </ul>
+          </div>
+          <div class="cert-year-group">
+            <h3 class="cert-year">2021-2022</h3>
+            <ul class="cert-items">
+              <li>Learn API Technical Writing: JSON and XML for Writers</li>
+              <li>WalkMe Digital Adoption Technical & Project Management</li>
+              <li>Effective Business English for Service Staff</li>
+              <li>Email Etiquette: Write More Effective Emails At Work</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-  <footer class="site-footer">
-    <p>© <span id="year"></span> Shuvam Sarkar. Technical Writer · Knowledge Base Specialist.</p>
-  </footer>
+      <section id="contact" class="content-section contact-section">
+        <h2 class="section-label">Get in Touch</h2>
+        <p class="contact-text">Open to documentation, knowledge base, and technical writing opportunities. Feel free to reach out.</p>
+        <div class="contact-grid">
+          <a href="mailto:shuvamsarkar2000@gmail.com" class="contact-card">
+            <span class="contact-card-label">Email</span>
+            <span class="contact-card-value">shuvamsarkar2000@gmail.com</span>
+          </a>
+          <a href="https://wa.me/919051879329" target="_blank" rel="noopener noreferrer" class="contact-card" title="WhatsApp text only when abroad">
+            <span class="contact-card-label">Phone (India)</span>
+            <span class="contact-card-value">+91-9051879329</span>
+          </a>
+          <a href="tel:+639456017496" class="contact-card">
+            <span class="contact-card-label">Phone (Philippines)</span>
+            <span class="contact-card-value">+63 945 601 7496</span>
+          </a>
+          <a href="https://www.linkedin.com/in/shuvam-sarkar-49b6a21b8" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <span class="contact-card-label">LinkedIn</span>
+            <span class="contact-card-value">Shuvam Sarkar</span>
+          </a>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <p>Built by Shuvam Sarkar. Design inspired by <a href="https://brittanychiang.com" target="_blank" rel="noopener noreferrer">Brittany Chiang</a>.</p>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Cursor glow effect -->
+  <div class="cursor-glow" aria-hidden="true"></div>
 
   <script src="script.js"></script>
 </body>
