@@ -264,6 +264,22 @@ body:hover .cursor-glow {
   color: var(--color-accent);
 }
 
+.mobile-resume-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-bg) !important;
+  background: var(--color-accent);
+  border-radius: var(--radius);
+}
+
+.mobile-resume-link:hover {
+  color: var(--color-bg) !important;
+  opacity: 0.9;
+}
+
 /* ============================
    Sidebar
    ============================ */
@@ -352,11 +368,41 @@ body:hover .cursor-glow {
   background: var(--color-text);
 }
 
+/* Sidebar Bottom */
+.sidebar-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Sidebar Resume Button */
+.sidebar-resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--color-bg);
+  background: var(--color-accent);
+  border-radius: var(--radius);
+  transition: transform var(--transition), box-shadow var(--transition), opacity var(--transition);
+  box-shadow: 0 0 20px rgba(94, 234, 212, 0.15);
+  width: fit-content;
+}
+
+.sidebar-resume-btn:hover {
+  color: var(--color-bg);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 24px rgba(94, 234, 212, 0.25);
+  opacity: 0.95;
+}
+
 /* Social Links */
 .sidebar-social {
   display: flex;
   gap: 1.25rem;
-  padding-top: 2rem;
 }
 
 .social-link {
@@ -840,6 +886,19 @@ body:hover .cursor-glow {
 .resume-btn:hover {
   opacity: 0.9;
   color: var(--color-bg);
+}
+
+.resume-btn--large {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 0 24px rgba(94, 234, 212, 0.15);
+  transition: transform var(--transition), box-shadow var(--transition), opacity var(--transition);
+}
+
+.resume-btn--large:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 28px rgba(94, 234, 212, 0.3);
 }
 
 /* ============================
