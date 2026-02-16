@@ -132,6 +132,26 @@ body:hover .cursor-glow {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-text-faint) transparent;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: var(--color-text-faint);
+  border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
 }
 
 .sidebar-inner {
@@ -870,36 +890,7 @@ body:hover .cursor-glow {
   color: var(--color-text);
 }
 
-.resume-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.75rem 1.5rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--color-bg);
-  background: var(--color-accent);
-  border-radius: var(--radius);
-  transition: opacity var(--transition);
-}
 
-.resume-btn:hover {
-  opacity: 0.9;
-  color: var(--color-bg);
-}
-
-.resume-btn--large {
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  border-radius: var(--radius-lg);
-  box-shadow: 0 0 24px rgba(94, 234, 212, 0.15);
-  transition: transform var(--transition), box-shadow var(--transition), opacity var(--transition);
-}
-
-.resume-btn--large:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 28px rgba(94, 234, 212, 0.3);
-}
 
 /* ============================
    Footer
