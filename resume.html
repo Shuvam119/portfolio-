@@ -31,8 +31,8 @@
     .header-photo { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 2px solid #0d9488; flex-shrink: 0; }
     .header-text { flex: 1; }
     .header .tagline { font-size: 9pt; color: #57534e; margin: 2pt 0; }
-    .header .contact { font-size: 9pt; margin-top: 6pt; color: #64748b; }
-    .header .contact span { margin: 0 8pt; }
+    .header .contact { font-size: 9pt; margin-top: 6pt; color: #64748b; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .header .contact span { margin: 0; }
     .two-col { display: flex; gap: 24pt; }
     .two-col .col { flex: 1; }
     .summary p { margin-bottom: 6pt; font-size: 9.5pt; color: #334155; }
@@ -75,8 +75,9 @@
 </head>
 <body>
   <div class="no-print">
-    <button onclick="window.print()">Save as PDF</button>
-    <p>Click the button above, then choose "Save as PDF" in the print dialog.</p>
+    <button id="download-pdf-btn">Download PDF</button>
+    <button onclick="window.print()" id="print-pdf-btn">Save as PDF</button>
+    <p id="pdf-instructions">If the automatic download is blocked, use the browser's Print dialog and choose "Save as PDF".</p>
   </div>
 
   <header class="header">
@@ -99,6 +100,7 @@
     <p>Technical Writer with 4+ years of experience creating enterprise documentation, managing large-scale knowledge bases, and supporting global product teams at Cognizant Technology Solutions.</p>
     <p>Currently working onsite in Manila (since Aug 2024) on a project for a major U.S.-based social media and online video-sharing platform, maintaining a multi-vertical knowledge database, authoring content for product teams, and supporting product feature launches.</p>
     <p>Specialized in knowledge-base administration, content audits, enterprise documentation, HTML/Markdown authoring, and Gen-AI-assisted workflows. Known for delivering clear, accurate documentation under strict client timelines.</p>
+    <p>Proficient in SDLC (Software Development Life Cycle) and DDLC (Document Development Life Cycle) methodologies, collaborating with development and documentation teams to align documentation with product processes.</p>
   </section>
 
   <section class="experience">
@@ -234,5 +236,31 @@
       </section>
     </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+  <script>
+    (function(){
+      const btn = document.getElementById('download-pdf-btn');
+      if(!btn) return;
+      btn.addEventListener('click', async function(){
+        const noPrintEl = document.querySelector('.no-print');
+        if(noPrintEl) noPrintEl.style.display = 'none';
+        const opt = {
+          margin: 0.4,
+          filename: 'Shuvam_Sarkar_Resume.pdf',
+          image: { type: 'jpeg', quality: 0.98 },
+          html2canvas: { scale: 2, useCORS: true },
+          jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+        };
+        try {
+          await html2pdf().set(opt).from(document.body).save();
+        } catch (e) {
+          console.error(e);
+          alert('Automatic download failed — try the Save as PDF button.');
+        } finally {
+          if(noPrintEl) noPrintEl.style.display = '';
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
