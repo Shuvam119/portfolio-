@@ -31,8 +31,10 @@
     .header-photo { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 2px solid #0d9488; flex-shrink: 0; }
     .header-text { flex: 1; }
     .header .tagline { font-size: 9pt; color: #57534e; margin: 2pt 0; }
-    .header .contact { font-size: 9pt; margin-top: 6pt; color: #64748b; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-    .header .contact span { margin: 0; }
+    .header .contact { font-size: 9pt; margin-top: 6pt; color: #64748b; }
+    .header .contact > span { display: block; margin: 0 0 2pt; }
+    .header .contact > span:last-child { margin-bottom: 0; }
+    .header .contact .contact-note { font-style: italic; }
     .two-col { display: flex; gap: 24pt; }
     .two-col .col { flex: 1; }
     .summary p { margin-bottom: 6pt; font-size: 9.5pt; color: #334155; }
@@ -81,17 +83,17 @@
   </div>
 
   <header class="header">
-    <img src="profile.jpg?v=20260221071322" alt="Shuvam Sarkar" class="header-photo" width="80" height="80">
+    <img src="profile.png?v=20260823071504" alt="Shuvam Sarkar" class="header-photo" width="80" height="80">
     <div class="header-text">
       <h1>Shuvam Sarkar</h1>
       <p class="tagline">Technical Writer &middot; Knowledge Base Specialist &middot; Enterprise Documentation</p>
       <p class="tagline">Kolkata, India / Manila, Philippines</p>
       <p class="contact">
         <span>shuvamsarkar2000@gmail.com</span>
-          <span style="display:block; font-style:italic; color:#64748b; margin-top:4px;">WhatsApp replies only when I'm abroad</span>
-          <span style="margin-right:8px;">+91 9051879329</span>
+        <span class="contact-note">WhatsApp replies only when I'm abroad</span>
+        <span>+91 9051879329</span>
         <span>+63 945 601 7496</span>
-          <span class="no-pdf">· <a href="index.html">Portfolio</a> · <a href="https://linkedin.com/in/shuvam-sarkar-49b6a21b8">LinkedIn</a></span>
+        <span class="no-pdf"><a href="index.html">Portfolio</a> &middot; <a href="https://linkedin.com/in/shuvam-sarkar-49b6a21b8">LinkedIn</a></span>
       </p>
     </div>
   </header>
@@ -100,8 +102,8 @@
     <h2>Professional Summary</h2>
     <p>Technical Writer with 4+ years of experience creating enterprise documentation, managing large-scale knowledge bases, and supporting global product teams at Cognizant Technology Solutions.</p>
     <p>Currently working onsite in Manila (since Aug 2024) on a project for a major U.S.-based social media and online video-sharing platform, maintaining a multi-vertical knowledge database, authoring content for product teams, and supporting product feature launches.</p>
-    <p>Specialized in knowledge-base administration, content audits, enterprise documentation, HTML/Markdown authoring, and Gen-AI-assisted workflows. Known for delivering clear, accurate documentation under strict client timelines.</p>
-    <p>Proficient in SDLC (Software Development Life Cycle) and DDLC (Document Development Life Cycle) methodologies, collaborating with development and documentation teams to align documentation with product processes.</p>
+    <p>Specialized in knowledge-base administration, content audits, enterprise documentation, HTML/Markdown authoring, and Docs-as-Code publishing workflows. Known for delivering clear, accurate documentation under strict client timelines.</p>
+    <p>Proficient in SDLC (Software Development Life Cycle) and DDLC (Document Development Life Cycle) methodologies, collaborating with development and documentation teams to align documentation with product processes. Personally exploring LLMs, RAG, Agentic RAG, and AI-powered knowledge systems as an extension of my knowledge-management work.</p>
   </section>
 
   <section class="experience">
@@ -196,24 +198,24 @@
         <div class="cert-group">
           <p class="cert-group-title">2025</p>
           <ul class="cert-list">
-            <li>Vibe Coding from Scratch: Learn to Code Using AI</li>
             <li>Business Writing & Technical Writing Immersion &mdash; Udemy</li>
             <li>The New Trainer's Guide to Creating End User Documentation &mdash; Udemy</li>
-            <li>Learn API Technical Writing 2: REST for Writers &mdash; Udemy</li>
             <li>Technical Writing: How to Write Software Documentation &mdash; Udemy</li>
-            <li>Prompt Engineering: ChatGPT & AI Prompts &mdash; Udemy</li>
-            <li>Learn Swagger and the OpenAPI Specification &mdash; Udemy</li>
             <li>Technical Writing: How to Write API Documentation &mdash; Udemy</li>
+            <li>Learn API Technical Writing 2: REST for Writers &mdash; Udemy</li>
+            <li>Learn Swagger and the OpenAPI Specification &mdash; Udemy</li>
             <li>Git and GitHub for Writers &mdash; Udemy</li>
+            <li>Prompt Engineering: ChatGPT & AI Prompts &mdash; Udemy</li>
+            <li>Vibe Coding from Scratch: Learn to Code Using AI &mdash; Udemy</li>
           </ul>
         </div>
         <div class="cert-group">
           <p class="cert-group-title">2024</p>
           <ul class="cert-list">
-            <li>Microsoft 365 Copilot: The Art of Prompt Writing &mdash; Birdify</li>
             <li>Better Business Writing Skills &mdash; Udemy</li>
             <li>Cloud Digital Leader &mdash; Google</li>
             <li>Markdown Mastery &mdash; Udemy</li>
+            <li>Microsoft 365 Copilot: The Art of Prompt Writing &mdash; Birdify</li>
           </ul>
         </div>
         <div class="cert-group">
@@ -222,8 +224,8 @@
             <li>Best Practices in Document Management &mdash; Udemy</li>
             <li>Zoomin Documentation Portal Admin &mdash; Zoomin</li>
             <li>Full Stack Web Development &mdash; Vidyastu</li>
-            <li>ChatGPT Complete Course / Complete Guide &mdash; Udemy</li>
             <li>Whatfix Digital Adoption Associate &mdash; Whatfix</li>
+            <li>ChatGPT Complete Course / Complete Guide &mdash; Udemy</li>
           </ul>
         </div>
         <div class="cert-group">
@@ -240,7 +242,7 @@
         <h2>Exploration & Learning</h2>
         <ul style="font-size: 9pt; color: #334155;">
           <li>Full-Stack Web Development Certification; Docs-as-Code, Git, Markdown workflows</li>
-          <li>Generative AI tools for content drafting and review automation</li>
+          <li>Exploring LLMs, RAG, Agentic RAG, and intelligent search through hands-on experiments, including built experimental RAG and Agentic RAG applications</li>
         </ul>
       </section>
     </div>

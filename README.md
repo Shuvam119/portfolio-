@@ -1,11 +1,11 @@
 # Shuvam Sarkar — Portfolio
 
-A one-page portfolio site for Technical Writer | Knowledge Base Specialist | Enterprise Documentation.
+A one-page portfolio site for Shuvam Sarkar, Technical Writer & Knowledge Management Professional, with personal exploration of LLMs, RAG, and AI-powered knowledge systems.
 
 ## Add your assets
 
 1. **Profile photo**  
-   Add a photo named `profile.jpg` in this folder (same folder as `index.html`). It appears as a circular image in the hero. Use a square or portrait image; it will be cropped to a circle. Supported formats: JPG, PNG, WebP.
+   Add a photo named `profile.png` in this folder (same folder as `index.html`). It appears as a circular image in the hero. Use a square or portrait image; it will be cropped to a circle. Supported formats: JPG, PNG, WebP.
 
 2. **Resume**  
    The "Download Resume" button opens `resume.html`. Visitors use Ctrl+P and choose Save as PDF to download.
